@@ -42,8 +42,6 @@ public abstract class Personaje {
 		return especialidad;
 	}
 	public void setEspecialidad(double especialidad) {
-		
-		especialidad = Math.round(Math.random() * 20);
 		this.especialidad = especialidad;
 	}
 	
