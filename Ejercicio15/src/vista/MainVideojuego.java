@@ -1,5 +1,6 @@
 package vista;
 
+import entidades.Arco;
 import entidades.Arma;
 import entidades.Combate;
 import entidades.Curandero;
@@ -38,6 +39,22 @@ public class MainVideojuego {
 	a3.setNombre("Ave María");
 	a3.setDamage(20.00);
 	
+	Personaje p4 = new Mago();
+	p4.setNombre("Albus Dumbledore");
+	p4.setArma(a2);
+	
+	Personaje p5 = new Guerrero();
+	p5.setNombre("Legolas");
+	Arma a4 = new Arco();
+	a4.setNombre("Belthrondin");
+	a4.setDamage(21.00);
+	p5.setArma(a4);
+	
+	Personaje p6 = new Curandero();
+	p6.setNombre("Cura de la parroquia");
+	p6.setArma(a4);
+	
+	
 	
 	
 	Combate c = new Combate();
@@ -45,6 +62,15 @@ public class MainVideojuego {
 	c.setP2(p2);
 	c.batalla();
 	
+	Combate c1 = new Combate();
+	c.setP1(p3);
+	c.setP2(p6);
+	c.batalla();
+	
+	Combate c2 = new Combate();
+	c.setP1(p4);
+	c.setP2(p5);
+	c.batalla();
 	
 }
 
