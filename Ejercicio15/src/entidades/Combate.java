@@ -132,7 +132,7 @@ public class Combate {
 			
 		}
 		
-		if(p1.vida < 0) {
+		if(p1.vida <= 0) {
 			System.out.println("==========================================================================================");
 			System.out.println("El ganador del combate es " + p2.nombre + ".");
 			System.out.println(p2.nombre + " ha finalizado el combate con " + p2.vida + " puntos de vida.");
